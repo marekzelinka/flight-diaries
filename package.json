@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "tsc": "tsc",
-    "dev": "node -r ts-node/register --watch src/index.ts",
+    "start": "node build/index.js",
+    "dev": "node -r ts-node/register --watch index.ts",
     "lint": "eslint .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
