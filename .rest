@@ -5,7 +5,15 @@ GET http://localhost:3000/ping
 GET http://localhost:3000/api/diaries
 
 ###
-POST http://localhost:3000/api/diaries
+GET http://localhost:3000/api/diaries/5
 
 ###
-GET http://localhost:3000/api/diaries/1
+POST http://localhost:3000/api/diaries
+Content-Type: application/json
+
+{
+  "date": "2017-07-01",
+  "weather": "rainy",
+  "visibility": "ok",
+  "comment": "Pretty normal flight, had some rain, but nothing that I've couldn't handle :D"
+}
