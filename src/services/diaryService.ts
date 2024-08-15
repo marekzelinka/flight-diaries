@@ -18,8 +18,14 @@ const addDiary = () => {
   return null;
 };
 
+const findById = (id: number): DiaryEntry | undefined => {
+  const entry = diaries.find((diary) => diary.id === id);
+  return entry;
+};
+
 export default {
   getEntries,
   getNonSensitiveEntries,
   addDiary,
+  findById,
 };

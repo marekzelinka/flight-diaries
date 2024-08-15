@@ -6,3 +6,6 @@ GET http://localhost:3000/api/diaries
 
 ###
 POST http://localhost:3000/api/diaries
+
+###
+GET http://localhost:3000/api/diaries/1
